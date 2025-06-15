@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Electrónico</title>
+
+    <style>
+        body {
+            background-color: #0f0f0f;
+            font-family: 'Arial', sans-serif;
+            color: #00ff99;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .titulo-con-imagen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background: linear-gradient(to right, #00ff99, #00ffff, #99ff00);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #00ff99;
+            width: fit-content;
+        }
+
+        .parpadeo {
+            color: black;
+            font-family: 'Impact', sans-serif;
+            font-size: 40px;
+            animation: parpadear 1s infinite;
+            text-shadow: 0 0 10px #00ff99;
+        }
+
+        @keyframes parpadear {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .escudo {
+            border: 4px solid #00ffcc;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #00ffcc;
+        }
+
+        .info-container {
+            margin-top: 10px;
+        }
+
+        .info-recuadro {
+            background-color: #1a1a1a;
+            border: 2px solid #00ffcc;
+            padding: 12px 25px;
+            margin: 10px auto;
+            border-radius: 10px;
+            width: fit-content;
+            box-shadow: 0 0 10px #00ffcc;
+        }
+
+        hr {
+            border: none;
+            height: 5px;
+            background-color: #00ff99;
+            box-shadow: 0 0 10px #00ff99;
+            margin: 30px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline-block;
+        }
+
+        li {
+            display: inline-block;
+            position: relative;
+        }
+
+        li:hover ul {
+            display: block;
+        }
+
+        ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
+        ul ul li {
+            width: 100%;
+        }
+
+        a {
+            display: block;
+            padding: 15px 25px;
+            text-decoration: none;
+            color: #00ffcc;
+            background: #1a1a1a;
+            border: 1px solid #00ffcc;
+            margin: 2px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background: #00ffcc;
+            color: #0f0f0f;
+            box-shadow: 0 0 10px #00ffcc;
+        }
+
+        .contenido-principal {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="titulo-con-imagen">
+        <div class="parpadeo">PROYECTO CIENTÍFICO 2025-2026</div>
+        <img src="escudo.jpg" width="120" height="120" alt="Escudo" class="escudo">
+    </div>
+
+    <div class="info-container">
+        <div class="info-recuadro">Nombre: Kevin Aldair Bravo Cedeño</div>
+        <div class="info-recuadro">3ro "N"</div>
+    </div>
+
+    <hr>
+
+    <div class="contenido-principal">
+        <ul>
+            <li>
+                <a href="#">Programación y Base de Datos</a>
+                <ul>
+                    <li><a href="#">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Diseño y Desarrollo Web</a>
+                <ul>
+                    <li><a href="file:///C:/Users/Usuario/OneDrive/Desktop/github.html">Trimestre 1</a></li>
+                    <li><a href="C:\Users\USER1\Desktop\Nueva carpeta (2)\trimestre 1CODIGO QR.html">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Sistemas Operativos y Redes</a>
+                <ul>
+                    <li><a href="#">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Soporte Técnico</a>
+                <ul>
+                    <li><a href="#">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+</body>
+</html>
+</html>
+
+
